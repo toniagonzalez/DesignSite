@@ -6,12 +6,9 @@
     --text-color-3: #9f3939;
     --text-color-4: #262626;
     --nav-bg-color: #000;
+    --email-text-color: #000;
+    --email-text-hover-color:#43aec9;
     --footer-bg-color: #000;
-    --form-bg-color: #e0d4d4;
-    --form-label-color: #262626;
-    --form-input-color: #fff;
-    --form-input-color-active: #fff2cc;
-    --contact-button-color: #005266;
     --section-bg-color-2: #9f3939;
     --section-bg-color-3:  #005266;
     --section-bg-color-4: #fff;
@@ -101,8 +98,7 @@ footer {
 }
 
 div.jumbotron,
-.services,
-.about {
+.services {
     padding: 60px 10%;
 }
 
@@ -269,11 +265,19 @@ div.section-content {
     );
 }
 
-div.contact-card {
-    width: 90%;
+a.email {
+    color: var(--email-text-color);
+}
+
+a.email:hover {
+    color: var(--email-text-hover-color);
+}
+
+div.section-card {
+    width: 95%;
     height: auto;
-    padding: 50px 10px;
-    border: 5px outset rgba(255, 255, 255, 0.3);
+    padding: 40px 10px;
+    border: 2px outset rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
     color: var(--text-color-1);
@@ -298,7 +302,7 @@ ul.social {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid #fff;
     background-color: #fff; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,9 +337,15 @@ ul.social {
 
     margin-top: -7vw;
 }
+
 .about div.section-content {
-    text-align: left;
+    text-align: center;
     line-height: 2rem;
+}
+
+.about div.section-card {
+    text-align: left;
+    padding: 20px 10px;
 }
 
 .about p {
@@ -359,7 +369,7 @@ footer {
     text-align: left;
     min-height: 20px;
     padding: 20px 10%;
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 
@@ -413,8 +423,7 @@ footer {
         margin: 10px; 
     }
 
-    .card-contact { 
-        width: 600px;
+    div.card-contact { 
         font-size: 1.2rem; 
     }
 
