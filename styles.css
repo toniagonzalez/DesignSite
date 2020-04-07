@@ -55,6 +55,11 @@ ul {
     color: var(--text-color-2);
 }
 
+.logo {
+    width: 40px;
+    height: 35px;
+}
+
 
 /*------ Header --------*/
 header {
@@ -372,6 +377,11 @@ footer {
     font-size: .9rem;
 }
 
+.footer-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
+}
 
 
 /*-------- Media Queries -------*/
