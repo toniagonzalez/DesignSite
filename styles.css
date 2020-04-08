@@ -25,7 +25,7 @@ html {
 
 body {
     color: var(--text-color-1);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: var(--root-font-size);
     margin: 0 auto;   
 }
@@ -108,7 +108,6 @@ div.jumbotron,
 }
 
 .section-header h2 {
-    font-family: "Courier New", 'Courier New', Courier, monospace;
     font-size: 2.5rem;
     font-weight: 500; 
     text-align: center;
@@ -311,6 +310,28 @@ ul.social {
     background-color: #fff; 
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.resume,
+.portfolio {
+    color: var(--text-color-1);
+    background-color: #000;
+    font-size: 1.2rem; 
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;  
+}
+
+.portfolio {
+    margin-right: 10px;
+}
+
+.resume:hover,
+.portfolio:hover {
+    color: var(--text-color-1);
+    background-color: #005266;
 }
 
 .social a  {
